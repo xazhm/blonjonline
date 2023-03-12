@@ -112,6 +112,7 @@ button.ghost {
   background-color: rgba(225, 225, 225, 0.2);
   border: 2px solid #fff;
   color: #fff;
+  margin-top: 50px;
 }
 
 button.ghost i {
@@ -147,6 +148,10 @@ form {
   padding: 0 50px;
   height: 100%;
   text-align: center;
+}
+
+.form-container .daftar-tombol {
+  display: none;
 }
 
 input {
@@ -291,4 +296,21 @@ input {
 
 .container.right-panel-active .overlay-right {
   transform: translateX(20%);
+}
+
+/* Media */
+
+@media (max-width: 600px) {
+  .form-container .daftar-tombol {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .login-container {
+    width: 100%;
+  }
 }
